@@ -10,7 +10,7 @@ public class App_main_class {
 
 	public static void main(String[] args) {
 
-		System.out.println("Project Start");
+		System.out.println("Project  Start");
 
 		User_Detail user = new User_Detail();
 		user.setUserId(12);
