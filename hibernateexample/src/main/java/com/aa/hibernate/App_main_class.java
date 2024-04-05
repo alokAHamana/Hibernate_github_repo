@@ -13,8 +13,8 @@ public class App_main_class {
 		System.out.println("Project  Start");
 
 		User_Detail user = new User_Detail();
-		user.setUserId(12);
-		user.setUserName("Ram");
+		user.setUserId(15);
+		user.setUserName("Shyam");
 
 		Configuration config = new Configuration();
 
