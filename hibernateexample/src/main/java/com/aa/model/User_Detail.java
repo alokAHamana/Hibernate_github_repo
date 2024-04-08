@@ -3,10 +3,11 @@ package com.aa.model;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
+import javax.transaction.Transaction;
 
 @Entity
 @Table(name="user_table")
-public class User_Detail {
+public class User_Detail {          // featuressssssssssssssssss
 
 	@Id
 	private int userId;
@@ -38,6 +39,11 @@ public class User_Detail {
 
 	public void setUserName(String userName) {
 		this.userName = userName;
+	}
+
+	public Transaction beginTransaction() {
+		// TODO Auto-generated method stub
+		return null;
 	}
 
 	
