@@ -6,7 +6,7 @@ import javax.persistence.Table;
 
 @Entity
 @Table(name="user_table")
-public class User_Detail {
+public class User_Detail {       // now coorect commit to master
 
 	@Id
 	private int userId;
