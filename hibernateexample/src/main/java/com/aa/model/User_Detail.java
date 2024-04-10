@@ -5,9 +5,8 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
-@Table(name="userTable")
-public class User_Detail {       // now coorect commit to master
-
+@Table(name="user_table")
+public class User_Detail {       //Pull request................                               
 	@Id
 	private int userId;
 
