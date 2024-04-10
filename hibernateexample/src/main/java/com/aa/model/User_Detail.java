@@ -5,7 +5,7 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
-@Table(name="user_table")
+@Table(name="userTable")
 public class User_Detail {       // now coorect commit to master
 
 	@Id

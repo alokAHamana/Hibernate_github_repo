@@ -2,6 +2,7 @@ package com.aa.hibernate;
 
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
+import org.hibernate.Transaction;
 import org.hibernate.cfg.Configuration;
 
 import com.aa.model.User_Detail;
@@ -13,21 +14,22 @@ public class Select_Record {
 	
 	Configuration config =new Configuration();
 	
-	config.configure("/com/aa/hibernate.cfg.xml");
+	config.configure("/com/aa/hibernate/hibernate.cfg.xml");
 	
 	SessionFactory factory = config.buildSessionFactory();
 	
 	Session	session =factory.openSession();
 	
 	  
-    Object obj = session.load(User_Detail.class, new Integer(1));
+    Object obj = session.load(User_Detail.class, new Integer(2));
     
-    User_Detail users= (User_Detail)obj;
+    User_Detail user= (User_Detail)obj;
     
-    System.out.println(users.getUserId()+" "+ users.getUserName());
+    System.out.println(user.getUserId()+" "+ user.getUserName());
     
     System.out.println("Object loaded successfully....!!!");
-
+    
+    
 	
 	
 	}
