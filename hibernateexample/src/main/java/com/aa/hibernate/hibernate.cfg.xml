@@ -21,6 +21,7 @@
 
 		<mapping class="com.aa.model.User_Detail"></mapping>
 
+	  <mapping class="com.aa.model.Product"></mapping>
 
 	</session-factory>
 
