@@ -25,7 +25,7 @@ public class CriteriaProductClient {
 
 		Session session = factory.openSession();
 
-		// **creating CriteriaBuilder**
+		// **creating     CriteriaBuilder**
 		CriteriaBuilder builder = session.getCriteriaBuilder();
 		CriteriaQuery<Product> criteriaQuery = builder.createQuery(Product.class);
 
