@@ -21,7 +21,7 @@ public class Select_Record {
 	Session	session =factory.openSession();
 	
 	  
-    Object obj = session.load(User_Detail.class, new Integer(2));
+    Object obj = session.load(User_Detail.class, new Integer(6));
     
     User_Detail user= (User_Detail)obj;
     

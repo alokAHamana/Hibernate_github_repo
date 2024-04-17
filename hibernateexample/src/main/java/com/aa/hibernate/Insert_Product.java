@@ -1,20 +1,22 @@
 package com.aa.hibernate;
-
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
 
+import com.aa.model.Product;
 import com.aa.model.User_Detail;
 
-public class Insert_Record {
-
+public class Insert_Product {
+	
+	
 	public static void main(String[] args) {
 
 		System.out.println("Project  Start");
 
-		User_Detail user = new User_Detail();
-		user.setUserId(1);
-		user.setUserName("Anu");
+		Product product = new Product();
+		product.setProductId(55);
+		product.setProName("Raaam");
+		product.setPrice(4010);
 
 		Configuration config = new Configuration();
 
@@ -24,7 +26,7 @@ public class Insert_Record {
 
 		Session session = factory.openSession();
 		session.beginTransaction();
-		session.save(user);
+		session.save(product);
 		
 		session.getTransaction().commit();
 		 session.close();
