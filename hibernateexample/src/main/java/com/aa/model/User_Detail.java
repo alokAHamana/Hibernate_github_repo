@@ -6,7 +6,7 @@ import javax.persistence.Table;
 
 @Entity
 @Table(name="usertable")
-public class User_Detail {       //Pull request................                               
+public class User_Detail {       //Alok testing .....
 	@Id
 	private int userId;
 
