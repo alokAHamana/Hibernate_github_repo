@@ -20,7 +20,7 @@ public class Update_Record {
 		
 		User_Detail user = new User_Detail();
 	  
-		user.setUserId(2);
+		user.setUserId(5);
 	    user.setUserName("Anav ahamana");
 	    
 	    Transaction  tx   = session.beginTransaction();
