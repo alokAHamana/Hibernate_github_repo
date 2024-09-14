@@ -6,7 +6,7 @@ import javax.persistence.Table;
 
 @Entity
 @Table(name="usertable")
-public class User_Detail {       //Alok testing ....            cdffasdfasdfasdfasdf clone.
+public class User_Detail {       //Alok testing ....            updasted on git hub clone.
 	@Id
 	private int userId;
 
